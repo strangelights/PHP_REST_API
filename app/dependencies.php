@@ -41,3 +41,8 @@ $container['db'] = function($c) {
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     return $pdo;
 };
+
+// Course
+$container['course'] = function($c) {
+    return new App\Model\Course($c->get('db'));
+};

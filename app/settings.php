@@ -22,8 +22,8 @@ return function (ContainerBuilder $containerBuilder) {
 
             // Database
             'db' => [
-                'dns' => 'sqlite',
-                'database' => __dir__ . 'course_review.db',
+                'dsn' => 'sqlite',
+                'database' => __DIR__ . 'course_review.db',
             ]
 
         ],
