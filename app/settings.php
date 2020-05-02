@@ -23,9 +23,8 @@ return function (ContainerBuilder $containerBuilder) {
             // Database
             'db' => [
                 'dsn' => 'sqlite',
-                'database' => __DIR__ . 'course_review.db',
-            ]
-
+                'database' => __DIR__ . '/course_reviews.db',
+            ],
         ],
     ]);
 };

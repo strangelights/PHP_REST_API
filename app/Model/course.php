@@ -18,7 +18,7 @@ class Course
     }
     public function getCourse($course_id)
     {
-        $statement = $this->database->$prepare(
+        $statement = $this->database->$prepare( 
             'SELECT * FROM courses WHERE id=:id'
         );
         $statement->bindParam('id', $course_id);
